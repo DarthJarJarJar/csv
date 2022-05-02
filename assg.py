@@ -10,10 +10,10 @@ with open("employees.csv") as csvfile:
     for i in range(len(file_list)):
         for row in file_list:
             if row not in new_content:
-                salary = int(row[3])
+                salary = int(row[2])
                 if salary>=maxs:
                     
-                    max = salary
+                    maxs = salary
                     max_employee = row
                     
         
